@@ -1,0 +1,44 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class vehiclescript : MonoBehaviour
+{
+    //variablez
+    public float accelerationForce;
+    public float steeringSensitivity;
+    private GameObject steeringThing;
+    //inputz
+    public KeyCode mvForward;
+    public KeyCode mvBack;
+    public KeyCode mvLeft;
+    public KeyCode mvRight;
+    public KeyCode hornKey;
+    //other guff
+    Rigidbody rb;
+    Rigidbody strb;
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        steeringThing = GameObject.Find(transform.name + "/steeringpoint");
+        strb = steeringThing.GetComponent<Rigidbody>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey(mvForward))
+        {
+            rb.AddForce(transform.forward * accelerationForce);
+        }
+        if (Input.GetKey(mvBack))
+        {
+            rb.AddForce(transform.forward * accelerationForce * -1);
+        }
+        if (Input.GetKey(mvLeft))
+        {
+
+        }
+    }
+}
