@@ -18,5 +18,4 @@ public class dontkillmebro : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
-    }
 }

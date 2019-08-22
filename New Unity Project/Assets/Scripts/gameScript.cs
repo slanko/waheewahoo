@@ -40,6 +40,14 @@ public class gameScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (instance == null)
+            {
+                instance = this;
+            }
+            if (instance != this)
+            {
+                Destroy(gameObject);
+            }
             transform.position = startPos;
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;

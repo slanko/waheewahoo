@@ -10,10 +10,7 @@ public class vehiclescript : MonoBehaviour
     private GameObject steeringThing;
     public float healthAmount;
     //inputz
-    public KeyCode mvForward;
-    public KeyCode mvBack;
-    public KeyCode mvLeft;
-    public KeyCode mvRight;
+    public KeyCode mvForward, mvBack, mvLeft, mvRight;
     public KeyCode hornKey;
     //other guff
     Rigidbody rb;
