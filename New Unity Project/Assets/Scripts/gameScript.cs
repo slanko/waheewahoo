@@ -11,6 +11,8 @@ public class gameScript : MonoBehaviour
     TextMesh scoreText;
     public float rScore, bScore;
     Rigidbody rb;
+    Quaternion startRota;
+    bool goalScored = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -24,6 +26,8 @@ public class gameScript : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
+        startRota = transform.rotation;
+
         if(instance == null)
         {
             instance = this;
@@ -33,43 +37,69 @@ public class gameScript : MonoBehaviour
             Destroy(gameObject);
         }
 
+
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            if (instance == null)
-            {
-                instance = this;
-            }
-            if (instance != this)
-            {
-                Destroy(gameObject);
-            }
-            transform.position = startPos;
-            rb.velocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            rb.Sleep();
-            scoreText = scoreBoard.GetComponent<TextMesh>();
-            scoreText.text = bScore.ToString() + " : " + rScore.ToString();
-
+            Resetto();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("menu");
+        }
+        if (SceneManager.GetActiveScene().name == "menu")
+        {
+            Destroy(gameObject);
         }
     }
 
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "resetter")
+        {
+            Resetto();
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "rGoal")
+        if (goalScored == false)
         {
-            bScore++;
-            scoreText.text = bScore.ToString() + " : " + rScore.ToString();
+            if (other.tag == "rGoal")
+            {
+                bScore++;
+                scoreText.text = bScore.ToString() + " : " + rScore.ToString();
+            }
+            if (other.tag == "bGoal")
+            {
+                rScore++;
+                scoreText.text = bScore.ToString() + " : " + rScore.ToString();
+            }
         }
-        if(other.tag == "bGoal")
+        goalScored = true;
+    }
+
+    void Resetto()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (instance == null)
         {
-            rScore++;
-            scoreText.text = bScore.ToString() + " : " + rScore.ToString();
+            instance = this;
         }
+        if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+        transform.position = startPos;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        rb.Sleep();
+        scoreText = scoreBoard.GetComponent<TextMesh>();
+        scoreText.text = bScore.ToString() + " : " + rScore.ToString();
+        transform.rotation = startRota;
+        goalScored = false;
     }
 }

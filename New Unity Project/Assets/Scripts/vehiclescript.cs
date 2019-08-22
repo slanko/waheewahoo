@@ -43,9 +43,19 @@ public class vehiclescript : MonoBehaviour
         {
             strb.AddForce(transform.right * steeringSensitivity);
         }
+        /*
         if (Input.GetKey(hornKey))
         {
             mcSplode();
+        }
+        */
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+       if(other.gameObject.tag == "resetter")
+        {
+            transform.position = new Vector3(0, 50, 0);
         }
     }
 

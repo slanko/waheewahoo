@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class dontkillmebro : MonoBehaviour
 {
     public static dontkillmebro instance;
@@ -17,5 +17,13 @@ public class dontkillmebro : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "menu")
+        {
+            Destroy(gameObject);
+        }
     }
 }

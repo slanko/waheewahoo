@@ -8,6 +8,7 @@ TagManager:
   - ball
   - rGoal
   - bGoal
+  - resetter
   layers:
   - Default
   - TransparentFX
