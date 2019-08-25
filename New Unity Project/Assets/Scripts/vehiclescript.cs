@@ -25,7 +25,7 @@ public class vehiclescript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(mvForward))
         {
