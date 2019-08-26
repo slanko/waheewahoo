@@ -9,6 +9,7 @@ TagManager:
   - rGoal
   - bGoal
   - resetter
+  - team2vehicle
   layers:
   - Default
   - TransparentFX

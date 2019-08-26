@@ -5,16 +5,15 @@ using UnityEngine;
 public class vehiclescript : MonoBehaviour
 {
     //variablez
-    public float accelerationForce;
-    public float steeringSensitivity;
     private GameObject steeringThing;
-    public float healthAmount;
+    public float steeringSensitivity, accelerationForce, healthAmount = 100, emissionDiv = 10;
+    public string otherTag;
+    ParticleSystem ps;
+    public GameObject clooone;
     //inputz
-    public KeyCode mvForward, mvBack, mvLeft, mvRight;
-    public KeyCode hornKey;
+    public KeyCode mvForward, mvBack, mvLeft, mvRight, hornKey;
     //other guff
-    Rigidbody rb;
-    Rigidbody strb;
+    Rigidbody rb, strb;
     public GameObject debrisObject;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +21,15 @@ public class vehiclescript : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         steeringThing = GameObject.Find(transform.name + "/steeringpoint");
         strb = steeringThing.GetComponent<Rigidbody>();
+        if(gameObject.tag == "team1vehicle")
+        {
+            otherTag = "team2vehicle";
+        }
+        else
+        {
+            otherTag = "team1vehicle";
+        }
+        ps = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -43,6 +51,10 @@ public class vehiclescript : MonoBehaviour
         {
             strb.AddForce(transform.right * steeringSensitivity);
         }
+        if(healthAmount <= 0)
+        {
+            mcSplode();
+        }
         /*
         if (Input.GetKey(hornKey))
         {
@@ -51,16 +63,24 @@ public class vehiclescript : MonoBehaviour
         */
     }
 
+
     void OnCollisionEnter(Collision other)
     {
        if(other.gameObject.tag == "resetter")
         {
             transform.position = new Vector3(0, 50, 0);
         }
+       if(other.gameObject.tag == otherTag)
+        {
+            healthAmount = healthAmount - other.relativeVelocity.magnitude;
+            var emission = ps.emission;
+            emission.rateOverTime = (100 - healthAmount) / emissionDiv;
+        }
     }
 
     void mcSplode()
     {
+        Instantiate(clooone, new Vector3(0, 50, 0), transform.rotation);
         Instantiate(debrisObject, transform.position, transform.rotation);
         Destroy(gameObject);
     }
