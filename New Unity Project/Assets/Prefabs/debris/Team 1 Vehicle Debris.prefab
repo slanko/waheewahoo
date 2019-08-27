@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1253150207926419801}
   m_Layer: 0
   m_Name: Cylinder (3)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,6 +67,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -175,6 +176,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -212,7 +214,7 @@ GameObject:
   - component: {fileID: 1253150208198613487}
   m_Layer: 0
   m_Name: Team 1 Vehicle (1)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,7 +264,7 @@ GameObject:
   - component: {fileID: 1253150208215867233}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,6 +316,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -371,7 +374,7 @@ GameObject:
   - component: {fileID: 1253150208218712659}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,6 +426,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -479,7 +483,7 @@ GameObject:
   - component: {fileID: 1253150208239549829}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -531,6 +535,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -587,7 +592,7 @@ GameObject:
   - component: {fileID: 1253150208240961481}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,6 +644,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -740,7 +746,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.4210845e-12, y: 0.9821999, z: 0.000011920923}
+  m_ConnectedAnchor: {x: 0.0000059604604, y: 0.9821999, z: -0.0000029802313}
   m_UseSpring: 1
   m_Spring:
     spring: 10
@@ -779,7 +785,7 @@ GameObject:
   - component: {fileID: 1253150208257976503}
   m_Layer: 0
   m_Name: Cube (8)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -831,6 +837,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -932,7 +939,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.48600048, y: 0.46590006, z: -0.84100074}
+  m_ConnectedAnchor: {x: -0.48600018, y: 0.46590006, z: -0.8410006}
   m_UseSpring: 1
   m_Spring:
     spring: 10
@@ -971,7 +978,7 @@ GameObject:
   - component: {fileID: 1253150208457742007}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1023,6 +1030,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1079,7 +1087,7 @@ GameObject:
   - component: {fileID: 1253150208574901229}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1131,6 +1139,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1187,7 +1196,7 @@ GameObject:
   - component: {fileID: 1253150208680156135}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1239,6 +1248,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1295,7 +1305,7 @@ GameObject:
   - component: {fileID: 1253150208712808884}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1347,6 +1357,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1402,7 +1413,7 @@ GameObject:
   - component: {fileID: 1253150208917245304}
   m_Layer: 0
   m_Name: steeringpoint
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1466,7 +1477,7 @@ GameObject:
   - component: {fileID: 1253150209204142552}
   m_Layer: 0
   m_Name: Cube (12)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1518,6 +1529,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1574,7 +1586,7 @@ GameObject:
   - component: {fileID: 1253150209205459451}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1626,6 +1638,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1683,7 +1696,7 @@ GameObject:
   - component: {fileID: 1253150209398647692}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1735,6 +1748,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1791,7 +1805,7 @@ GameObject:
   - component: {fileID: 1253150209657032462}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1843,6 +1857,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1899,7 +1914,7 @@ GameObject:
   - component: {fileID: 1253150209673896028}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1951,6 +1966,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2007,7 +2023,7 @@ GameObject:
   - component: {fileID: 1253150209689541476}
   m_Layer: 0
   m_Name: Cube (9)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2059,6 +2075,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2115,7 +2132,7 @@ GameObject:
   - component: {fileID: 1253150209772524647}
   m_Layer: 0
   m_Name: Cube (13)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2167,6 +2184,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2274,6 +2292,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2314,7 +2333,7 @@ GameObject:
   - component: {fileID: 1253150209936487276}
   m_Layer: 0
   m_Name: Cube (10)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2366,6 +2385,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2422,7 +2442,7 @@ GameObject:
   - component: {fileID: 1253150210020386982}
   m_Layer: 0
   m_Name: Cube (14)
-  m_TagString: team1vehicle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2474,6 +2494,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2526,6 +2547,7 @@ GameObject:
   - component: {fileID: 8335077915234677428}
   - component: {fileID: 3188257141693313463}
   - component: {fileID: 8825246847538355381}
+  - component: {fileID: 5359345105128382886}
   m_Layer: 0
   m_Name: Team 1 Vehicle Debris
   m_TagString: Untagged
@@ -7232,7 +7254,7 @@ ParticleSystem:
 --- !u!199 &8825246847538355381
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7256,6 +7278,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7291,6 +7314,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &5359345105128382886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8335077915234677429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc3cc0ce705bba64091ec3fd00bf4420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doTheThing: 0
 --- !u!1001 &1253150209022977397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7546,7 +7582,7 @@ PrefabInstance:
     - target: {fileID: 2586243613591801786, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0056518964
+      value: 0.0056518978
       objectReference: {fileID: 0}
     - target: {fileID: 2586243613591801786, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7561,7 +7597,7 @@ PrefabInstance:
     - target: {fileID: 2586243613824658519, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.005546423
+      value: -0.0055464213
       objectReference: {fileID: 0}
     - target: {fileID: 2586243613824658519, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7661,7 +7697,7 @@ PrefabInstance:
     - target: {fileID: 2586243614214329337, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 6.115184e-10
+      value: 0.000000002534246
       objectReference: {fileID: 0}
     - target: {fileID: 2586243614214329337, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7681,7 +7717,7 @@ PrefabInstance:
     - target: {fileID: 2586243613879428447, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.0000000054242264
+      value: -0.0000000035615813
       objectReference: {fileID: 0}
     - target: {fileID: 2586243613879428447, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7726,7 +7762,7 @@ PrefabInstance:
     - target: {fileID: 2586243614418595027, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0000000021773303
+      value: 0.0000000035743142
       objectReference: {fileID: 0}
     - target: {fileID: 2586243614418595027, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7771,7 +7807,7 @@ PrefabInstance:
     - target: {fileID: 2586243612867750481, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.004036806
+      value: 0.004036807
       objectReference: {fileID: 0}
     - target: {fileID: 2586243612867750481, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7791,7 +7827,7 @@ PrefabInstance:
     - target: {fileID: 2586243614752053106, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.003931332
+      value: -0.00393133
       objectReference: {fileID: 0}
     - target: {fileID: 2586243614752053106, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7816,7 +7852,7 @@ PrefabInstance:
     - target: {fileID: 2586243614568784158, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 2.0641466e-10
+      value: 0.0000000021291422
       objectReference: {fileID: 0}
     - target: {fileID: 2586243614568784158, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7836,17 +7872,17 @@ PrefabInstance:
     - target: {fileID: 2586243613678698746, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.0000000016298147
+      value: -6.9849204e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2586243613678698746, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.01434769
+      value: 0.014347672
       objectReference: {fileID: 0}
     - target: {fileID: 2586243613678698746, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.000000020489097
+      value: -0.000000024680048
       objectReference: {fileID: 0}
     - target: {fileID: 2586243614397433173, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
@@ -7856,17 +7892,17 @@ PrefabInstance:
     - target: {fileID: 2586243614397433172, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0000000013969841
+      value: 9.313227e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2586243614397433172, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.014347676
+      value: 0.014347677
       objectReference: {fileID: 0}
     - target: {fileID: 2586243614397433172, guid: 27e3bd34c4f7ea3489bc93a327675329,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.000000009313227
+      value: 0.000000008381904
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27e3bd34c4f7ea3489bc93a327675329, type: 3}

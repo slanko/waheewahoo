@@ -21,7 +21,10 @@ public class vehiclescript : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         steeringThing = GameObject.Find(transform.name + "/steeringpoint");
         strb = steeringThing.GetComponent<Rigidbody>();
-        if(gameObject.tag == "team1vehicle")
+        ps = GetComponent<ParticleSystem>();
+        var emission = ps.emission;
+        emission.rateOverTime = 0;
+        if (gameObject.tag == "team1vehicle")
         {
             otherTag = "team2vehicle";
         }
@@ -29,7 +32,6 @@ public class vehiclescript : MonoBehaviour
         {
             otherTag = "team1vehicle";
         }
-        ps = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -55,12 +57,12 @@ public class vehiclescript : MonoBehaviour
         {
             mcSplode();
         }
-        /*
-        if (Input.GetKey(hornKey))
+        
+        if (Input.GetKeyDown(hornKey))
         {
             mcSplode();
         }
-        */
+        
     }
 
 
@@ -73,6 +75,7 @@ public class vehiclescript : MonoBehaviour
        if(other.gameObject.tag == otherTag)
         {
             healthAmount = healthAmount - other.relativeVelocity.magnitude;
+            ps = GetComponent<ParticleSystem>();
             var emission = ps.emission;
             emission.rateOverTime = (100 - healthAmount) / emissionDiv;
         }
@@ -80,7 +83,9 @@ public class vehiclescript : MonoBehaviour
 
     void mcSplode()
     {
-        Instantiate(clooone, new Vector3(0, 50, 0), transform.rotation);
+        GameObject newCar = Instantiate(clooone, new Vector3(0, Random.Range(50, 60), 0), transform.rotation);
+        vehiclescript newCarScript = newCar.GetComponent<vehiclescript>();
+        newCarScript.healthAmount = 100;
         Instantiate(debrisObject, transform.position, transform.rotation);
         Destroy(gameObject);
     }
