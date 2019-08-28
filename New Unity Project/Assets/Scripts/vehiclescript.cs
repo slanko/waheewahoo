@@ -6,10 +6,10 @@ public class vehiclescript : MonoBehaviour
 {
     //variablez
     private GameObject steeringThing;
-    public float steeringSensitivity, accelerationForce, healthAmount = 100, emissionDiv = 10;
+    public float steeringSensitivity, accelerationForce, healthAmount = 100, emissionDiv = 10, damageThreshold = 5;
     public string otherTag;
     ParticleSystem ps;
-    public GameObject clooone;
+    public GameObject clooone, smokeParticle;
     //inputz
     public KeyCode mvForward, mvBack, mvLeft, mvRight, hornKey;
     //other guff
@@ -74,10 +74,23 @@ public class vehiclescript : MonoBehaviour
         }
        if(other.gameObject.tag == otherTag)
         {
-            healthAmount = healthAmount - other.relativeVelocity.magnitude;
-            ps = GetComponent<ParticleSystem>();
-            var emission = ps.emission;
-            emission.rateOverTime = (100 - healthAmount) / emissionDiv;
+            print("collision magnitude " + other.relativeVelocity.magnitude);
+            if (other.relativeVelocity.magnitude > damageThreshold)
+            {
+                healthAmount = healthAmount - other.relativeVelocity.magnitude;
+                ps = GetComponent<ParticleSystem>();
+                var emission = ps.emission;
+                emission.rateOverTime = (100 - healthAmount) / emissionDiv;
+                foreach(ContactPoint contact in other.contacts)
+                {
+                    Instantiate(smokeParticle, contact.point, other.transform.rotation);
+                }
+                print("above threshold, damage applied");
+            }
+            else
+            {
+                print("below threshold");
+            }
         }
     }
 
