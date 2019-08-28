@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class menuScript : MonoBehaviour
 {
     public dontkillmebro[] dontKillScripts;
+    Animator anim;
     public void loadGame()
     {
         SceneManager.LoadScene("gamescene");
@@ -14,11 +15,17 @@ public class menuScript : MonoBehaviour
     private void Start()
     {
         dontKillScripts = FindObjectsOfType(typeof(dontkillmebro)) as dontkillmebro[];
+        anim = GetComponent<Animator>();
     }
 
     public void quitGame()
     {
         Application.Quit();
+    }
+
+    public void menuFlip()
+    {
+        anim.SetTrigger("switch");
     }
 
     void callClearDebris()

@@ -56,13 +56,13 @@ public class gameScript : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
+    /*void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "resetter")
         {
             Resetto();
         }
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
@@ -80,6 +80,7 @@ public class gameScript : MonoBehaviour
             }
         }
         goalScored = true;
+        Invoke("Resetto", 3);
     }
 
     void Resetto()

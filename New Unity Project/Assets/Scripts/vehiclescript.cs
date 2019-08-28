@@ -70,7 +70,7 @@ public class vehiclescript : MonoBehaviour
     {
        if(other.gameObject.tag == "resetter")
         {
-            transform.position = new Vector3(0, 50, 0);
+            transform.position = new Vector3(Random.Range(-2, 2), Random.Range(50, 60), Random.Range(-2, 2));
         }
        if(other.gameObject.tag == otherTag)
         {
@@ -96,7 +96,7 @@ public class vehiclescript : MonoBehaviour
 
     void mcSplode()
     {
-        GameObject newCar = Instantiate(clooone, new Vector3(0, Random.Range(50, 60), 0), transform.rotation);
+        GameObject newCar = Instantiate(clooone, new Vector3(Random.Range(-2, 2), Random.Range(50, 60), Random.Range(-2, 2)), transform.rotation);
         vehiclescript newCarScript = newCar.GetComponent<vehiclescript>();
         newCarScript.healthAmount = 100;
         Instantiate(debrisObject, transform.position, transform.rotation);
