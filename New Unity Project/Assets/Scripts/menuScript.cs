@@ -6,6 +6,9 @@ public class menuScript : MonoBehaviour
 {
     public dontkillmebro[] dontKillScripts;
     Animator anim;
+    public GameObject scoreBoardMen;
+    Animator anim2;
+    bool debrisCheck = false;
     public void loadGame()
     {
         SceneManager.LoadScene("gamescene");
@@ -15,7 +18,19 @@ public class menuScript : MonoBehaviour
     private void Start()
     {
         dontKillScripts = FindObjectsOfType(typeof(dontkillmebro)) as dontkillmebro[];
+
         anim = GetComponent<Animator>();
+
+        anim2 = scoreBoardMen.GetComponent<Animator>();
+
+        if (dontKillScripts.Length >= 1)
+        {
+            anim2.SetBool("debrisInScene", true);
+        }
+        else
+        {
+            anim2.SetBool("debrisInScene", false);
+        }
     }
 
     public void quitGame()
@@ -26,6 +41,11 @@ public class menuScript : MonoBehaviour
     public void menuFlip()
     {
         anim.SetTrigger("switch");
+    }
+
+    public void toggleDebrisChecker()
+    {
+
     }
 
     void callClearDebris()
